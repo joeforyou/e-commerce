@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/pages.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  </head>
+  <body ng-app="">
+
+
+ 
+  <h1 class="welcome"> Hello {{ session['currentUser']['first_name'] }}!</h1>
+  <a href='/logout'><span id='logout'>Log Out</span></a>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="listing">
+  <span class="need"><a href='/postneed'>Need A Ride?</a></span>
+  <span class="offer" onclick="location.href='postoffer.html'">Offer A Ride</span>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<u><h1 class="title">Active Ride Requests</h1></u>
+
+<div id="requests" ng-app="">
+<span class="items" ng-repeat="x in From, To, DeptTime, ArvTime "><img src="static/img/smallcancel.png" class="cancel" ></span>
+
+  </body>
+</html>

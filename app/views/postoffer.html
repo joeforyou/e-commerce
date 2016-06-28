@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to Ride Share!</title>
+    <link rel="stylesheet" href="css/pages.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  </head>
+  <body>
+  <img src="img/cancel.png" onclick="location.href='profilepage.html'" id="back">
+  <h1 class="title">Offer a Ride</h1>
+  <form class="listing" method="post" action="test.php">
+  <span class="word" >*From: <input name="From"></input></span>
+<span class="word" id="one" >*To: <input name="To" ></input></span>
+ <span class="word" >*Departure Time: <input name="DptTime" type="time"></input></span>
+<span class="word" id="two">*Arrival Time: <input name="ArvTime"  type="time"></input></span>
+ <span class="word">*Date: <input name="Date" type="date"></input></span>
+<span class="word" id="three">Price: <input name="Price"  type="currency"></input></span>
+<span class="word">*Spots Available: <input name-"Spots"></input></span>
+<span class="word" id="four"><input type="submit" value="submit"  id="makeoffer" ></input></span>
+  </form>
+
+
+
+  </body>
+</html>
