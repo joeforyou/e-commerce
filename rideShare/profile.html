@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<title>Ride Share Profile</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   		 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    	<script type="text/javascript">
+    	</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header">
+        		<h1>RIDE <span>SHARE</span></h1>
+        		<button id="logout">Log Out</button>
+      		</div>
+      		<div id="page">
+				<div id="profile">
+					<img id="profilePic" src="img/smallcancel.png">
+					<p id="name">Billy Bob</p>
+					<p id="about">About</p>
+					<p id="sentence">From Texas. Moved to LA for work. Dont have a car, so hoping to find a commute buddy to get to work.</p>
+				</div>
+				<div>
+					<button id="offerRide">Offer a Ride</button>
+				</div>
+				<div>
+					<button id="needRide">Need a Ride</button>		
+				</div>
+				<div id="rideRequest">
+					<h3 id="activeRequest">Active Ride Requests:</h3>
+					<p>Los Angeles to San Francisco June 22 7pm</p>
+					<p>Los Angeles to San Diego July 4 8am</p>
+					<p>San Diego to Corona August 22 9am</p>
+					<p>Long Beach to Santa Monica August 25 12pm</p>
+		<!-- {% for i in session['message'] %}
+				<p>{{ i }}</p>
+		{% endfor %} -->
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

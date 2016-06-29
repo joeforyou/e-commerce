@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>Need a Ride</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#carpool").animate({right: "+=550"}, 2000);
+		});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header">
+		    	<h1>RIDE <span>SHARE</span></h1>
+		    	<button id="logout">Log Out</button>
+		  	</div>
+		  	<div id="search">
+		  		<form id="toFrom">
+					From<br><br><input id="from" type="text" placeholder="Where from?"/><br><br> 
+					Destination<br><br><input id="destination" type="text" placeholder="Where to?"/><br><br>   	
+					<input id="searchButton" type="sumbit" value="submit"/>	
+		  		</form>
+		  	</div>
+		  	<img id="carpool" src="img/carpool.png" alt="">
+		</div>
+	</body>
+</html>
