@@ -23,7 +23,8 @@ routes['POST']['/register'] = 'Users#register'
 routes['/logout'] = 'Users#logout'
 
 routes['/profile'] = 'Rides#index'
-routes['/postneed'] = 'Rides#postneed'
+routes['POST']['/postneed'] = 'Rides#postneed'
+routes['POST']['/postoffer']='Rides#postoffer'
 """
     You can add routes and specify their handlers as follows:
 
