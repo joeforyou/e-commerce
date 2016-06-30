@@ -34,3 +34,8 @@ class Users(Controller):
     def logout(self):
         session.pop('currentUser', None)
         return redirect('/')
+
+    def load_results(self, to):
+        res = self.models['User'].load_results('to')
+        self.load_view('results.html', results=res)
+            
