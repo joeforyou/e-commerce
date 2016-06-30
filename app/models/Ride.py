@@ -12,4 +12,6 @@ class Ride(Model):
     	query = "SELECT * FROM offers WHERE :user_id = offer['user_id']"
     	ride_offers = self.db.query_db(query, data)
     	return [ride_request, ride_offers]
-
+    def postneed(self, data)
+    	query = "INSERT INTO requests (to_zip, from_zip, pickup, destination) VALUES (:to_zip, :from_zip, :pickup, :destination)"
+    	return self.db.query_db(query, data)

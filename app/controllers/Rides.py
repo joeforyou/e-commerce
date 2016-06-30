@@ -10,7 +10,16 @@ class Rides(Controller):
         return self.load_view('profilepage.html')
 
     def postneed(self):
-    	return self.load_view('postneed.html')
+    	extract_to_zip_code = request.form['to'].split(" ")
+    	extract_from_zip_code = request.form['from'].split(" ")
+    	temp = {
+    		'to_zip': extract_to_zip_code[len(extract_to_zip_code) - 1]
+    		'from_zip': extract_from_zip_code[len(extract_from_zip_code) -1]
+    		'destination': request.form['to'].split(" ")
+    		'pickup': request.form['from'].split(" ")
+    	}
+    	self.load_model['Ride'].postneed(temp)
+    	return self.load_view('profile.html')
 
     def load_profile(self):
     	session['currentUser']['id'] = current_user_id

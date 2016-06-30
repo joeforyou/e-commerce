@@ -18,7 +18,6 @@ from system.core.router import routes
 """
 routes['default_controller'] = 'Users'
 routes['POST']['/login'] = 'Users#login'
-routes['/signup'] = 'Users#signup'
 routes['POST']['/register'] = 'Users#register'
 routes['/logout'] = 'Users#logout'
 
