@@ -55,6 +55,6 @@ class User(Model):
         data = { 
             'request.to_zip': destination[:-5]
             }
-        query = "SELECT * FROM (SELECT * FROM offers WHERE :to_zip = offer.to_zip) WHERE offer.interest NOT >= offer.seat"
+        query = "SELECT * FROM (SELECT * FROM offers WHERE :to_zip = offer['to_zip']) WHERE offer['interest'] NOT >= offer['seat']"
         return self.db.query_db(query, data)
 
